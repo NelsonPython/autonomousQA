@@ -43,7 +43,7 @@ Take a screen capture
 ```
 driver.save_screenshot('Test1.png')
 ```
-![](images/testLogin.png)
+![](images/test1.png)
 
 Wait 2 seconds so you can see what happens
 ```
