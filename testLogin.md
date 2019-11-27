@@ -5,7 +5,7 @@
 
 ### Pre-requisites
 
-In order to run this script, install Selenium and Python and use Firefox
+In order to run this script, install Selenium and Python.  Use the Firefox browser
 
 ### How it works
 
