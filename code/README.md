@@ -1,1 +1,0 @@
-Autonomous QA code samples
