@@ -1,7 +1,13 @@
 
 # Automating your login tests
 
-Resource:  selenium-python.readthedocs.io/navigating.html
+**This script automates testing the error message that appears when a user enters the wrong password**
+
+### Pre-requisites
+
+In order to run this script, install Selenium and Python
+
+### How it works
 
 Import the Selenium libraries and import the time library 
 ```
@@ -67,3 +73,7 @@ Shut down the browser
 ```
 driver.quit()
 ```
+
+### Resources
+
+[Selenium-python Read the Docs](https://selenium-python.readthedocs.io/navigating.html)
