@@ -5,7 +5,7 @@
 
 ### Pre-requisites
 
-In order to run this script, install Selenium and Python.  Use the Firefox browser
+In order to run this script, install [Selenium](https://selenium-python.readthedocs.io/installation.html) and [Python](https://www.python.org/downloads/).  Use the [Firefox browser](https://www.mozilla.org/en-US/firefox/)
 
 ### How it works
 
@@ -70,6 +70,10 @@ Shut down Firefox
 driver.quit()
 ```
 
+### Test drive the script
+
+[testLogin.py](testLogin.py)
+
 ### Resources
 
-[Selenium-python Read the Docs](https://selenium-python.readthedocs.io/navigating.html)
+[Selenium-Python Read the Docs](https://selenium-python.readthedocs.io/navigating.html)
