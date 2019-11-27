@@ -5,7 +5,7 @@
 
 ### Pre-requisites
 
-In order to run this script, install Selenium and Python
+In order to run this script, install Selenium and Python and use Firefox
 
 ### How it works
 
@@ -18,22 +18,19 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 ```
-To use this sample, you will need Firefox
+Use the Firefox web driver to run the tests
 ```
 driver = webdriver.Firefox()
 ```
-The website to be tested in this example is the I3 marketplace login
+Set up the test by adding a link to the login webpage.  In this example, we are testing the I3 marketplace login page.  Print the name of the test.  Add a good username and a bad password.
 ```
 driver.get("http://3.17.183.219:8000")
-```
-Set up the first test with a good user name and an bad password
-```
-print("TEST 1 - invalid login")
+print("TEST 1 - user enters the wrong password")
 
 usr = "Testuser"
 pwd = "invalid"
 ```
-Automate typing the username and password
+Automate typing the username and the password
 ```
 username = driver.find_element_by_id('inputEmail')
 username.send_keys(usr)
@@ -45,22 +42,21 @@ Automate clicking the Login button
 driver.find_element_by_xpath('//button[@type="submit"]').click()
 ```
 Take a screen capture
-
 ```
 driver.save_screenshot('Test1.png')
 ```
-![](images/Test1.png)
+![screen capture](images/Test1.png)
 
-Wait 2 seconds so you can see what happens
+Wait 2 seconds to see what happens
 ```
 time.sleep(2)
 ```
-the expected result is
+In this example, the expected result is
 
 ```
 <p class="text-danger">Invalid username/password!</p>
 ```
-Get the test result and compare it to the expected result.  If they match, then print a message saying the test passed.  If they do not match, then print the test results
+Get the text from the result and compare it to the expected result.  If they match, then print a message saying the test passed.  If they do not match, then print the test results
 
 ```
 res = driver.find_element_by_tag_name('p')
@@ -69,7 +65,7 @@ if res.text == 'Invalid username/password!':
 else:
     print(res.text)
 ```
-Shut down the browser
+Shut down Firefox
 ```
 driver.quit()
 ```
