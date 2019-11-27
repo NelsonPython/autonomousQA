@@ -72,7 +72,7 @@ driver.quit()
 
 ### Test drive the script
 
-[testLogin.py](testLogin.py)
+[code/testLogin.py](testLogin.py)
 
 ### Resources
 
