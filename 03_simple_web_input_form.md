@@ -76,7 +76,7 @@ Congratulations!  You learned the basics for automating testing web input forms.
 
 Here's the entire script:
 
-[testLogin.py](code/testLogin.py)
+[01-simple_web_input_form.py](code/01-simple_web_input_form.py)
 
 ### Resources
 
