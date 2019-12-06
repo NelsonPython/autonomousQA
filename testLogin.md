@@ -5,7 +5,7 @@
 
 ### Pre-requisites
 
-In order to run this script, install [Selenium](https://selenium-python.readthedocs.io/installation.html) and [Python](https://www.python.org/downloads/).  Use the [Firefox browser](https://www.mozilla.org/en-US/firefox/)
+In order to run this script, install [Selenium](https://selenium-python.readthedocs.io/installation.html) and [Python](https://www.python.org/downloads/).  Use a [Firefox browser](https://www.mozilla.org/en-US/firefox/)
 
 ### How it works
 
