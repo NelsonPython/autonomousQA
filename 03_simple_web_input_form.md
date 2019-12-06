@@ -1,5 +1,5 @@
 
-## Automating testing simple web input forms
+## Simple automated test for I3 Marketplace login
 
 **Learn how to automate opening a webpage, entering data into an input form, and clicking a button.**  This simple script automates testing that an error message appears when a user enters the wrong password
 
