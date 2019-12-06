@@ -1,5 +1,5 @@
 
-## Automating testing error messages for wrong passwords
+## Automating testing messages from web input forms
 
 **This simple script automates testing that an error message appears when a user enters the wrong password**
 
