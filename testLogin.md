@@ -70,7 +70,11 @@ Shut down Firefox
 driver.quit()
 ```
 
+Congratulations!  You learned the basics for automating testing web input forms.
+
 ### Test drive the script
+
+Here's the entire script:
 
 [testLogin.py](code/testLogin.py)
 
