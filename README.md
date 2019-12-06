@@ -2,8 +2,8 @@
 
 **Begin learning how to automate software quality assurance using Python and Selenium**
 
-[Simple script for login testing](testLogin.md)
+[Automating testing error messages for web input forms](testLogin.md)
 
-[Simple page object example for login testing](testLoginPageObject.md)
+[Using a page object to test your input form](testLoginPageObject.md)
 
 
