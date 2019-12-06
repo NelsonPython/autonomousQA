@@ -4,6 +4,6 @@
 
 [Automating testing simple web input forms](testLogin.md)
 
-[Using the Page Object Model to test a simple web input form](testLoginPageObject.md)
+[Using the Page Object Model to test a simple web input form](pom-1.md)
 
 
