@@ -1,5 +1,9 @@
 # Autonomous QA
 
-**Tutorials teaching how to automate quality assurance of software**
+**Begin learning how to automate software quality assurance using Python and Selenium**
 
-[Python-Selenium automated login testing](testLogin.md)
+[Simple script for login testing](testLogin.md)
+
+[Simple page object example for login testing](testLoginPageObject.md)
+
+
