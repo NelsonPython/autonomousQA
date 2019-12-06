@@ -1,7 +1,7 @@
 
-# Automating your login tests
+# Automating testing of error messages for wrong passwords
 
-**This script automates testing the error message that appears when a user enters the wrong password**
+**This simple script automates testing that an error message appears when a user enters the wrong password**
 
 ### Pre-requisites
 
