@@ -1,5 +1,6 @@
 ## Using the Page Object Model design pattern to automate I3 login tests
 
+```
 import unittest
 from selenium import webdriver
 import loginPage
@@ -37,3 +38,4 @@ class LoginTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+```
