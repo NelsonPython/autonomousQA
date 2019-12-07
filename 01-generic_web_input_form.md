@@ -1,6 +1,6 @@
 ## Simple script to automate testing web input forms
 
-In order to test web input forms, you need permission.  You may test the login form located at:  
+In order to test a web input form, you need permission.  For purposes of running this script, you may test the login form located at:  
 
 http://www.nelsontech.blog/Tutorial-SWVV/LogonDemo/login.html
 
