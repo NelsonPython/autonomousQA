@@ -5,7 +5,7 @@
 
 ### Using Python and Selenium to automate software tests
 
-[Simple script to automate testing web input forms](01_generic_web_input_form.md)
+[Simple script to automate testing web input forms](01-generic_web_input_form.md)
 
 [Using the Page Object Model design pattern to test web input forms](02-generic-pom-tests.md)
 
