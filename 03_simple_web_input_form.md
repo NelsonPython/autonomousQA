@@ -1,7 +1,7 @@
 
 ## Simple script that automates testing the I3 Marketplace login
 
-**Learn how to automate opening a webpage, entering data into an input form, and clicking a button.**  This simple script automates testing that an error message appears when a user enters the wrong password
+**This simple script automates testing that an error message appears when a user enters the wrong password**
 
 ### Pre-requisites
 
@@ -76,7 +76,7 @@ Congratulations!  You learned the basics for automating testing web input forms.
 
 Here's the entire script:
 
-[01-simple_web_input_form.py](code/01-simple_web_input_form.py)
+[03_simple_web_input_form.py](code/03_simple_web_input_form.py)
 
 ### Resources
 
