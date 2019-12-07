@@ -25,7 +25,7 @@ Tell the script which website to test
 ```
 driver.get("http://www.nelsontech.blog/Tutorial-SWVV/LogonDemo/login.html")
 ```
-Get the username and the password field names
+Find the username, password, and login button fields.
 ```
 usr = driver.find_element_by_id("username_field")
 pwd = driver.find_element_by_id("password_field")
