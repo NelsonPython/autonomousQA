@@ -1,4 +1,4 @@
-# Autonomous QA
+# Autonomous SQA
 
 **Software quality assurance aims to make sure that software behaves as expected.  Autonomous QA strives to automate the testing process to reduce time and improve the accuracy and repeatability of testcases.**  First, consider all the risks that your software will encounter.  Make a list of risks in a risk register.  Evaluate each risk.  Think about how often the risky situation occurs.  Consider how big the problem will be if the risk does occur.  Look at how easy it is to find the risky situation.  Rank each risk so you can tackle the biggests risks first.  Think about how you can prevent or deal with the biggest risks.  
 
