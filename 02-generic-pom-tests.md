@@ -138,8 +138,28 @@ the click_login_button method clicks the login button
         element = self.driver.find_element(*MainPageLocators.LOGIN_BUTTON)
         element.click()
 ```
+### Locators
 
+Locators are used to find elements on a web page such as the login button.  Import the Selenium web driver common library so you can use the locators.  
+```
+from selenium.webdriver.common.by import By
 
+class MainPageLocators(object):
+    """A class for main page locators. All main page locators should come here"""
+    GO_BUTTON = (By.ID, 'submit')
+```
+In the browser, you can right mouse click on the Login.thml page and select "view page source" to see the HTML.  Notice that the login button has an id="login_button".
+```
+<input id="login_button" type="submit" value="LOGIN">
+```
+You can find the login button using this ID.
+```    
+    LOGIN_BUTTON = (By.ID, 'login_button')
+
+class SearchResultsPageLocators(object):
+    """A class for search results locators. All search results locators should come here"""
+    pass
+```
  
  
  
