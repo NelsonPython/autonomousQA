@@ -19,17 +19,15 @@ import loginPage
 Create a testcase called LoginTest by generating a subclass of unittest.TestCase
 ```
 class LoginTest(unittest.TestCase):
-    """Test class for login tests"""
 ```
-Define a setUp() method to set the driver and the webpage being tested
-
+Define a setUp method to set the driver and the webpage to be tested
 ```
     def setUp(self):
         self.driver = webdriver.Firefox()
         # link to page being tested
         self.driver.get("http://3.17.183.219:8000")
 ```
-Define tests by defining methods that begin with letters "test".  This informs the test runner that these methods are tests.  Short tests are easier to manage.  For example, this script has four short tests.  The first test checks whether you can logon with a valid username ('demo') and password ('mode').  It starts by making sure you are on the Example Login Page.  It ends by making sure you are logged into the "Welcome" page.
+Make sure all your test methods begin with the letters "test".  This informs the test runner that these methods are tests.  Short tests are easier to manage.  For example, this script has four short tests.  The first test checks whether you can logon with a valid username ('demo') and password ('mode').  It starts by making sure you are on the Example Login Page.  It ends by making sure you are logged into the "Welcome" page.
 ```
     def test_invalid_username(self):
         """
@@ -58,7 +56,7 @@ Define a tearDown() method to clean up after you finish testing
     def tearDown(self):
         self.driver.close()
 ```
-Use this Python convention to start your script.  [Read more about these special variables](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
+Use this Python convention to start your script.  [Read more about special variables such as __name__ and __main__](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
 ```
 if __name__ == "__main__":
     unittest.main()
@@ -66,16 +64,14 @@ if __name__ == "__main__":
 
 ### Page object model for the I3 marketplace login
 
-This script has code specifically for the login page.
-
-Generic elements are stored in the element.py script.  Locators are stored in the locators.py script.  Import these two scripts.  And import the Selenium Keys library so you can move the mouse arrow down.
+This script has code specifically for the login page.  Generic elements are stored in the element.py script.  Locators are stored in the locators.py script.  Import the BasePageElement from element.py and the MainPageLocators from locators.py.  Import the Selenium Keys library so you can move the mouse arrow down.
 
 ```
 from element import BasePageElement
 from locators import MainPageLocators
 from selenium.webdriver.common.keys import Keys
 ```
-The BasePage object contains generic information such as the web driver
+The BasePage object contains basic information such as the web driver
 ```
 class BasePage(object):
     """ setup """
@@ -88,7 +84,7 @@ The MainPage inherits from the BasePage
 class MainPage(BasePage):
     """page actions"""
 ```
-Define methods for each test.  The is_title_matches method gets the page title so you can make sure you are testing the correct page
+Define methods for each test.  These methods can be named according to their purpose.  The is_title_matches method gets the page title so you can make sure you are testing the correct page
 ```
     def is_title_matches(self):
         """ gets page title"""
@@ -110,7 +106,7 @@ The click_login_button method clicks the login button
         element = self.driver.find_element(*MainPageLocators.I3_LOGIN_BUTTON)
         element.click()
 ```
-This login form writes a message when the login fails.  This message is in a paragraph tag so find the tag_name of 'p'
+The login_message method gets a message when the login fails.  This message is in a paragraph tag so you can find it by looking for a  tag_name of 'p'
 ```
     def login_message(self):
         return self.driver.find_element_by_tag_name('p').text
@@ -126,3 +122,5 @@ class MainPageLocators(object):
     LOGIN_BUTTON = (By.ID, 'login_button')
     I3_LOGIN_BUTTON = (By.XPATH, '//button[@type="submit"]')
 ```
+
+Congratulatons!  You have testcases to test the I3 Marketplace login in a format that is easy to maintain and can be extended to include other tests. 
