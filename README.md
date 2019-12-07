@@ -1,9 +1,9 @@
 # Autonomous QA
 
-**Begin learning how to automate software quality assurance**
+**Begin learning how to automate software quality assurance**  One component of software quality assurance is automating software testcases.
 
 
-### Using Python and Selenium to automate software tests
+### Using Python and Selenium to automate software testcases
 
 [Simple script to automate testing web input forms](01-generic_web_input_form.md)
 
