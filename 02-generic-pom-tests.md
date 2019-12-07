@@ -1,8 +1,6 @@
 ## Using the Page Object Model design pattern to test web input forms
 
-**The Page Object Model is a popular way of organizing tests so they are easier to maintain.**
-
-This example has four scripts:
+**The Page Object Model is a popular way of organizing tests so they are easier to maintain.**  This example has four scripts:
 
  - Testcases in [loginTest.py](code/02-generic-pom-example/loginTest.py)
  - A Page Object Model for the [login page](code/02-generic-pom-example/loginPage.py)
