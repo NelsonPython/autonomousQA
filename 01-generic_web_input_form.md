@@ -1,6 +1,10 @@
 ## Simple script to automate testing web input forms
 
-In order to automate testing a web input form, you need a web input form.  For this example, you may use the login form located at:
+In order to automate testing a web input form, you need a web input form.  
+
+![screen shot of login page](images/loginPage.png)
+
+For this example, you may use the login form located at:
 
 http://www.nelsontech.blog/Tutorial-SWVV/LogonDemo/login.html
 
