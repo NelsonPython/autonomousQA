@@ -6,6 +6,14 @@
  - A Page Object Model for the login page in [loginPage.py](code/02-generic-pom-example/loginPage.py)
  - Locators in [locators.py](code/02-generic-pom-example/locators.py)
  - Elements in [element.py](code/02-generic-pom-example/element.py)
+ 
+### Pre-requisites
+
+In order to test a web input form, you need permission.  For purposes of running this script, you may test the login form located at:  http://www.nelsontech.blog/Tutorial-SWVV/LogonDemo/login.html
+
+![screen shot of login page](images/loginPage3.png)
+
+In order to run this script, make sure [Python](https://www.python.org/downloads/) is installed.  Install [Selenium for Python](https://selenium-python.readthedocs.io/installation.html).  Use a [Firefox browser](https://www.mozilla.org/en-US/firefox/)
 
 ### Testcases
 
