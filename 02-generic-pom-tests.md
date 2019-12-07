@@ -17,7 +17,7 @@ from selenium import webdriver
 import loginPage
 ```
 
-Create a testcase by generating a subclass of unittest.TestCase
+Create a testcase called LoginTest by generating a subclass of unittest.TestCase
 
 ```
 class LoginTest(unittest.TestCase):
