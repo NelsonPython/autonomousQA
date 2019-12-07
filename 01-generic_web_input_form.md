@@ -31,7 +31,7 @@ usr = driver.find_element_by_id("username_field")
 pwd = driver.find_element_by_id("password_field")
 btn = driver.find_element_by_id("login_button")
 ```
-Automate typing a username and password
+Automate typing a valid username and password
 ```
 usr.send_keys('demo', Keys.ARROW_DOWN)
 pwd.send_keys('mode', Keys.ARROW_DOWN)
@@ -40,7 +40,7 @@ Automate clicking the login button
 ```
 btn.click()
 ```
-Get the results and compare them to the expected results
+Get the results and compare them to the expected results.  In this case, you should see the Welcome page.  Try changing the username or password to see the error page.
 ```
 if driver.title == "Welcome":
 	print("Test passed")
