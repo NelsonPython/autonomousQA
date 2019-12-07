@@ -88,7 +88,7 @@ Define a tearDown method to clean up after you finish testing
     def tearDown(self):
         self.driver.close()
 ```
-Use this Python convention to start your script.  [Read more about these special variables __name__ and __main__](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
+Use this Python convention to start your script.  [Read more about these special variables ```__name__``` and ```__main__```](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
 ```
 if __name__ == "__main__":
     unittest.main()
@@ -96,7 +96,7 @@ if __name__ == "__main__":
 
 ### Login Page Object Model
 
-This script has code specifically for the login page. Generic elements are stored in the element.py script. Locators are stored in the locators.py script. Import the BasePageElement from element.py and the MainPageLocators from locators.py. Import the Selenium Keys library so you can move the mouse arrow.
+This script has code specifically for the login page. Generic elements are stored in the element.py script. Locators are stored in the locators.py script.  Import the BasePageElement from element.py and the MainPageLocators from locators.py. Import the Selenium Keys library so you can move the mouse arrow.
 
 ```
 from element import BasePageElement
@@ -115,14 +115,13 @@ The MainPage inherits from the BasePage
 class MainPage(BasePage):
 
 ```
-Define methods for each test.  Use names that describe the purpose of the test.  The is_title_matches method gets the page title so you can make sure you are testing the correct page
+Define methods for each test.  Use names that describe the purpose of the test.  The ```is_title_matches``` method gets the page title so you can make sure you are testing the correct page
 ```
     def is_title_matches(self):
         """ gets page title"""
         return self.driver.title
 ```
-The fill_in_credentials method finds the username and password fields and types in the username and password for the testcase.
-Use the "view source" command in the web browser to look at the HTML so you can decide how to find the elements you are testing.
+The ```fill_in_credentials``` method finds the username and password fields.  Then, it types the username and password for the testcase.  To setup this test, use the "view source" command in the web browser to look at the HTML input form.
 ```
       <form name="login_form" onsubmit="login(this.username_field.value, this.password_field.value); return false;">
         <table>
@@ -141,19 +140,22 @@ Use the "view source" command in the web browser to look at the HTML so you can 
         </table>
       </form>
 ```
-In this example, the script will type a username and password, then click the login button.  Notice that the input field for username has an id="username_field".  You can find this field by using the find_element_by_id command.
+Notice that the input field for username has an id="username_field".  You can find this field by using the ```find_element_by_id``` command.
 ```
     def fill_in_credentials(self,username,password):
         """  gets fields for credentials and types in test credentials """
         usr = self.driver.find_element_by_id("username_field")
 ```
-The password field has an id of "password_field".  Looking for ids is the best way to find fields.
+The password field has an id of "password_field"
 ```
         pwd = self.driver.find_element_by_id("password_field")
+```
+Use ```send_keys``` to input the text and ```Keys.ARROW_DOWN``` to move to the next field
+```
         usr.send_keys(username,Keys.ARROW_DOWN)
         pwd.send_keys(password,Keys.ARROW_DOWN)
 ```
-The click_login_button method clicks the login button
+The ```click_login_button``` method clicks the login button
 ```
     def click_login_button(self):
         """attempts login"""
@@ -170,7 +172,7 @@ class MainPageLocators(object):
     """A class for main page locators. All main page locators should come here"""
     GO_BUTTON = (By.ID, 'submit')
 ```
-In the browser, you can right mouse click on the Login.html page and select "view source" to see the HTML.  Notice that the login button has an id="login_button".
+Take a look at the page source and you will see that the login button has an id="login_button"
 ```
 <input id="login_button" type="submit" value="LOGIN">
 ```
