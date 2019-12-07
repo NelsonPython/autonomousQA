@@ -4,13 +4,11 @@ In order to test a web input form, you need permission.  For purposes of running
 
 ![screen shot of login page](images/loginPage3.png)
 
-### Pre-requisites
-
-In order to run this script, install [Selenium](https://selenium-python.readthedocs.io/installation.html) and [Python](https://www.python.org/downloads/).  Use a [Firefox browser](https://www.mozilla.org/en-US/firefox/)
+In order to run this script, make sure [Python](https://www.python.org/downloads/) is installed.  Install [Selenium for Python](https://selenium-python.readthedocs.io/installation.html).  Use a [Firefox browser](https://www.mozilla.org/en-US/firefox/)
 
 ### How it works
 
-Import the Selenium libraries and import the time library 
+Import the Selenium libraries
 
 ```
 from selenium import webdriver
@@ -18,23 +16,22 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
 ```
-Use the Firefox web driver to run the tests
+Use the Firefox web driver to automate the web browser
 ```
 driver = webdriver.Firefox()
 ```
-Set up the test by adding a link to the login webpage
+Tell the script which website to test
 ```
 driver.get("http://www.nelsontech.blog/Tutorial-SWVV/LogonDemo/login.html")
 ```
-Automate typing the username and the password
+Get the username and the password field names
 ```
 usr = driver.find_element_by_id("username_field")
 pwd = driver.find_element_by_id("password_field")
 btn = driver.find_element_by_id("login_button")
 ```
-Automate typing the username and the password
+Automate typing a username and password
 ```
 usr.send_keys('demo', Keys.ARROW_DOWN)
 pwd.send_keys('mode', Keys.ARROW_DOWN)
