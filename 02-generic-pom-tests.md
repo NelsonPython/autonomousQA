@@ -17,7 +17,7 @@ In order to run this script, make sure [Python](https://www.python.org/downloads
 
 ### Testcases
 
-Import the unittest testing toolkit for constructing and running tests.  Import the Selenium web driver for automating a web browser.  Import the page object model called "loginPage" with code for the login page you are testing.
+Import the unittest testing toolkit for constructing and running tests.  Import the Selenium web driver for automating a web browser.  Import the "loginPage" script with code specifically for the login page you will be testing.
 
 ```
 import unittest
@@ -25,14 +25,14 @@ from selenium import webdriver
 import loginPage
 ```
 
-Create a testcase called LoginTest by generating a subclass of unittest.TestCase
+Create a testcase called "LoginTest" by generating a subclass of unittest.TestCase
 
 ```
 class LoginTest(unittest.TestCase):
     """Test class for login tests"""
     
 ```
-Define a setUp() method to set the driver and the webpage being tested
+Define a setUp method to set the web driver and the webpage to be tested
 
 ```
     def setUp(self):
@@ -40,7 +40,7 @@ Define a setUp() method to set the driver and the webpage being tested
         # link to page being tested
         self.driver.get("http://www.nelsontech.blog/Tutorial-SWVV/LogonDemo/login.html")
 ```
-Define tests by defining methods that begin with letters "test".  This informs the test runner that these methods are tests.  Short tests are easier to manage.  For example, this script has four short tests.  The first test checks whether you can logon with a valid username ('demo') and password ('mode').  It starts by making sure you are on the Example Login Page.  It ends by making sure you are logged into the "Welcome" page.
+Make sure all your test methods begin with the letters "test". This informs the test runner that these methods are tests. Short tests are easier to manage. For example, this script has four short tests. The first test checks whether you can logon with a valid username ('demo') and password ('mode'). It starts by making sure you are on the "Example Login Page". It ends by making sure you are logged into the "Welcome" page.
 ```
     def test_valid_login(self):
         """
@@ -99,9 +99,7 @@ if __name__ == "__main__":
 
 ### Login Page Object Model
 
-This script has code specifically for the login page.
-
-Generic elements are stored in the element.py script.  Locators are stored in the locators.py script.  Import these two scripts.  And import the Selenium Keys library so you can move the mouse arrow down.
+This script has code specifically for the login page. Generic elements are stored in the element.py script. Locators are stored in the locators.py script. Import the BasePageElement from element.py and the MainPageLocators from locators.py. Import the Selenium Keys library so you can move the mouse arrow down.
 
 ```
 from element import BasePageElement
@@ -122,7 +120,7 @@ class MainPage(BasePage):
     """page actions"""
 
 ```
-Define methods for each test.  The is_title_matches method gets the page title so you can make sure you are testing the correct page
+Define methods for each test.  Use names that describe the purpose.  The is_title_matches method gets the page title so you can make sure you are testing the correct page
 ```
     def is_title_matches(self):
         """ gets page title"""
