@@ -4,12 +4,12 @@
 
 This example has four scripts:
 
- - Tests in [loginTest.py](code/02-generic-pom-example/loginTest.py)
- - A Page Object Model in [loginPage.py](code/02-generic-pom-example/loginPage.py)
+ - Testcases in [loginTest.py](code/02-generic-pom-example/loginTest.py)
+ - A Page Object Model for the [login page](code/02-generic-pom-example/loginPage.py)
  - Locators in [locators.py](code/02-generic-pom-example/locators.py)
  - Elements in [element.py](code/02-generic-pom-example/element.py)
 
-### Tests
+### Testcases
 
 Import the unittest testing toolkit for constructing and running tests.  Import the Selenium web driver for automating a web browser.  Import the page object model called "loginPage" with code for the login page you are testing.
 
@@ -161,7 +161,31 @@ class SearchResultsPageLocators(object):
     pass
 ```
  
- 
+ ### Elements
+You can use the element.py script to get or to set a webpage element
+
+```
+from selenium.webdriver.support.ui import WebDriverWait
+
+class BasePageElement(object):
+    """Base page class that is initialized on every page object class."""
+
+    def __set__(self, obj, value):
+        """Sets the text to the value supplied"""
+        driver = obj.driver
+        WebDriverWait(driver, 100).until(
+            lambda driver: driver.find_element_by_name(self.locator))
+        driver.find_element_by_name(self.locator).clear()
+        driver.find_element_by_name(self.locator).send_keys(value)
+
+    def __get__(self, obj, owner):
+        """Gets the text of the specified object"""
+        driver = obj.driver
+        WebDriverWait(driver, 100).until(
+            lambda driver: driver.find_element_by_name(self.locator))
+        element = driver.find_element_by_name(self.locator)
+        return element.get_attribute("value")
+```
  
 ### Resources
 
