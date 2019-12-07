@@ -1,8 +1,6 @@
 ## Simple script to automate testing web input forms
 
-In order to automate testing a web input form, you need a web input form.  
-
-![screen shot of login page](images/loginPage.png)
+![screen shot of login page](images/loginPage2.png)
 
 For this example, you may use the login form located at:
 
