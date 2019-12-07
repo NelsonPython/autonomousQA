@@ -17,7 +17,7 @@ Think about how you can prevent or deal with these risks.  This is called risk m
 ### Testing software
 One way to prevent a risk from occurring, is to test the software by entering valid and invalid or unexpected input.  You do this by creating testcases.  Testcases help find bugs so developers can fix them.    You repeat the tests until you prove that the software behaves as expected in situation being tested by the testcase.  It may take several tries before all the software bugs are fixed, so automating the tests is faster and more accurate than repeating manual checks.
 
-### Using Python and Selenium to automate software testcases
+#### Using Python and Selenium to automate software testcases
 You can use Python and Selenium to control each step of a testcase and report results.  Here are some simple examples to get started:
 
 [Simple script to automate testing web input forms](01-generic_web_input_form.md)
