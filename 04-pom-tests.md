@@ -27,7 +27,7 @@ Define a setUp method to set the driver and the webpage to be tested
         # link to page being tested
         self.driver.get("http://3.17.183.219:8000")
 ```
-Make sure all your test methods begin with the letters "test".  This informs the test runner that these methods are tests.  Short tests are easier to manage.  For example, this script has four short tests.  The first test checks whether you can logon with a valid username ('demo') and password ('mode').  It starts by making sure you are on the Example Login Page.  It ends by making sure you are logged into the "Welcome" page.
+Make sure all your test methods begin with the letters "test".  This informs the test runner that these methods are tests.  Short tests are easier to manage.  For example, this script has two short tests.  The first test checks whether you can logon with the wrong username or password.  It starts by making sure you are on the "I3 Marketplace | Login" page.  It ends by making sure you see a message that says 'Invalid username/password!'.
 ```
     def test_invalid_username(self):
         """
