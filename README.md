@@ -15,7 +15,7 @@ Think about how often the risky situation occurs.  Consider how big the problem 
 Think about how you can prevent or deal with these risks.  This is called risk mitigation.  Develop a plan to mitigate each risk.  You may be able to prevent the risk from occurring by testing the code involved.  Perhaps you can buy insurance to take care in case the risk occurs.  Perhaps you can train the people who use the software.  
 
 ### Testing software
-One way to deal with risks, is to test the software by entering valid and invalid or unexpected input.  You do this by creating testcases.  Testcases help find bugs so developers can fix them.    You repeat the tests until you prove that the software behaves as expected in situation being tested by the testcase.  It may take several tries before all the software bugs are fixed, so automating the tests is faster and more accurate than repeating manual checks.
+One way to prevent a risk from occurring, is to test the software by entering valid and invalid or unexpected input.  You do this by creating testcases.  Testcases help find bugs so developers can fix them.    You repeat the tests until you prove that the software behaves as expected in situation being tested by the testcase.  It may take several tries before all the software bugs are fixed, so automating the tests is faster and more accurate than repeating manual checks.
 
 ### Using Python and Selenium to automate software testcases
 You can use Python and Selenium to control each step of a testcase and report results.  Here are some simple examples to get started:
