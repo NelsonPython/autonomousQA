@@ -60,7 +60,7 @@ Congratulations!  You just automated testing a login form
 
 Here's the entire script:
 
-[01-simple_web_input_form.py](code/01-simple_web_input_form.py)
+[01_generic_web_input_form.py](code/01_generic_web_input_form.py)
 
 ### Resources
 
