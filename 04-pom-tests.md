@@ -2,10 +2,10 @@
 
 **The Page Object Model is a popular way of organizing tests so they are easier to maintain.**  This example has four scripts:
 
- - Testcases in [loginTest.py](code/04-pom-example/loginTest.py)
- - A Page Object Model for the login page in [loginPage.py](code/04-pom-example/loginPage.py)
- - Locators in [locators.py](code/04-pom-example/locators.py)
- - Elements in [element.py](code/04-pom-example/element.py)
+ - Testcases in [loginTest.py](code/04-simple-pom-example/loginTest.py)
+ - A Page Object Model for the login page in [loginPage.py](code/04-simple-pom-example/loginPage.py)
+ - Locators in [locators.py](code/04-simple-pom-example/locators.py)
+ - Elements in [element.py](code/04-simple-pom-example/element.py)
 
 ### Testcases
 
