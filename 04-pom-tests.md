@@ -9,7 +9,7 @@
 
 ### Testcases
 
-Import the unittest toolkit for constructing and running tests.  Import the Selenium web driver for automating a web browser.  Import the page object model called "loginPage" with code for the login page you are testing.
+Import the unittest toolkit for constructing and running tests.  Import the Selenium web driver for automating a web browser.  Import the page object model called "loginPage" with code specifically for the login page you are testing.
 
 ```
 import unittest
