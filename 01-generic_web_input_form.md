@@ -1,3 +1,6 @@
+## Simple script to automate testing web input forms
+
+```
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -22,3 +25,4 @@ else:
         print("Test failed ", driver.title)
 
 driver.quit()
+```
