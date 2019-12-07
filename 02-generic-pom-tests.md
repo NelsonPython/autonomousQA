@@ -129,7 +129,7 @@ The fill_in_credentials method finds the username and password fields and types 
         usr.send_keys(username,Keys.ARROW_DOWN)
         pwd.send_keys(password,Keys.ARROW_DOWN)
 ```
-the click_login_button method clicks the login button
+The click_login_button method clicks the login button
 ```
     def click_login_button(self):
         """attempts login"""
@@ -138,7 +138,7 @@ the click_login_button method clicks the login button
 ```
 ### Locators
 
-Locators are used to find elements on a web page such as the login button.  Import the Selenium web driver common library so you can use the locators.  
+Locators are used to find elements on a web page such as the login button.  Import the Selenium web driver common library so you can use the "By" locators.  
 ```
 from selenium.webdriver.common.by import By
 
@@ -146,11 +146,11 @@ class MainPageLocators(object):
     """A class for main page locators. All main page locators should come here"""
     GO_BUTTON = (By.ID, 'submit')
 ```
-In the browser, you can right mouse click on the Login.thml page and select "view page source" to see the HTML.  Notice that the login button has an id="login_button".
+In the browser, you can right mouse click on the Login.html page and select "view page source" to see the HTML.  Notice that the login button has an id="login_button".
 ```
 <input id="login_button" type="submit" value="LOGIN">
 ```
-You can find the login button using this ID.
+You can use this ID to find the login button
 ```    
     LOGIN_BUTTON = (By.ID, 'login_button')
 
