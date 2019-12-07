@@ -4,10 +4,10 @@
 
 This example has four scripts:
 
- - Tests in [loginTest.py](loginTest.py)
- - A Page Object Model in [loginPage.py](loginPage.py)
- - Locators in [locators.py](locators.py)
- - Elements in [element.py](element.py)
+ - Tests in [loginTest.py](code/02-generic-pom-example/loginTest.py)
+ - A Page Object Model in [loginPage.py](code/02-generic-pom-example/loginPage.py)
+ - Locators in [locators.py](code/02-generic-pom-example/locators.py)
+ - Elements in [element.py](code/02-generic-pom-example/element.py)
 
 ### Tests
 
