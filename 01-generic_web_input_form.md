@@ -1,6 +1,6 @@
 ## Simple script to automate testing web input forms
 
-![screen shot of login page](images/loginPage2.png)
+![screen shot of login page](images/loginPage3.png)
 
 For this example, you may use the login form located at:
 
